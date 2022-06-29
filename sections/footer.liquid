@@ -36,8 +36,8 @@
   }
 {%- endstyle -%}
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
-  {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
+<footer class="footer section-{{ section.id }}-padding">
+  {% comment %} {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
       {%- if section.blocks.size > 0 -%}
         {%- liquid
@@ -222,7 +222,7 @@
         {%- endif -%}
       </div>
     </div>
-  {%- endif -%}
+  {%- endif -%} {% endcomment %}
 
   <div class="footer__content-bottom">
     <div class="footer__content-bottom-wrapper page-width">
