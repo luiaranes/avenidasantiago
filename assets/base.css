@@ -619,7 +619,7 @@ h6:empty {
 }
 
 .link--text:hover {
-  color: rgba(var(--color-foreground), 0.75);
+  color: #7d998f;
 }
 
 .link-with-icon {
@@ -2215,7 +2215,7 @@ input[type='checkbox'] {
 .header-wrapper {
   display: block;
   position: relative;
-  background-color: rgb(var(--color-background));
+  background-color: #000;
 }
 
 .header-wrapper--border-bottom {
@@ -2282,12 +2282,12 @@ input[type='checkbox'] {
 }
 
 .header__heading-link:hover .h2 {
-  color: rgb(var(--color-foreground));
+  color: #7d998f;
 }
 
 .header__heading-link .h2 {
   line-height: 1;
-  color: rgba(var(--color-foreground), 0.75);
+  color: #fff;
 }
 
 .header__heading-logo {
@@ -2334,7 +2334,7 @@ input[type='checkbox'] {
 }
 
 .header__icon {
-  color: rgb(var(--color-foreground));
+  color: #fff;
 }
 
 .header__icon span {
@@ -2590,11 +2590,11 @@ details[open] > .header__submenu {
 .header__menu-item {
   padding: 1.2rem;
   text-decoration: none;
-  color: rgba(var(--color-foreground), 0.75);
+  color: #fff;
 }
 
 .header__menu-item:hover {
-  color: rgb(var(--color-foreground));
+  color: #fff;
 }
 
 .header__menu-item span {
@@ -2620,7 +2620,7 @@ details[open] > .header__menu-item .icon-caret {
 
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
-  color: rgb(var(--color-foreground));
+  color: #7d998f;
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
