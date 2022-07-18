@@ -1,5 +1,8 @@
 .footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  margin-top: 0!important;
+  background-color: #000000;
+  color: #fff;
 }
 
 .footer:not(.color-background-1) {
@@ -42,7 +45,7 @@
 
 .footer__content-bottom {
   border-top: solid 0.1rem rgba(var(--color-foreground), 0.08);
-  padding-top: 3rem;
+  padding-top: 0;
 }
 
 .footer__content-bottom:only-child {
@@ -424,7 +427,7 @@ noscript .localization-selector.link {
 @media screen and (min-width: 750px) {
   .footer-block__details-content .list-menu__item--link:hover,
   .copyright__content a:hover {
-    color: rgb(var(--color-foreground));
+    color: #7d998f;
     text-decoration: underline;
     text-underline-offset: 0.3rem;
   }

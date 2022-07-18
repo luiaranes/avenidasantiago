@@ -130,6 +130,7 @@
   .banner:not(.banner--stacked) {
     flex-direction: row;
     flex-wrap: wrap;
+    min-height: 72rem;
   }
 
   .banner--stacked {
