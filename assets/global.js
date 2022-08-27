@@ -899,3 +899,13 @@ class VariantRadios extends VariantSelects {
 }
 
 customElements.define('variant-radios', VariantRadios);
+
+$(function() {
+  $(window).on("scroll", function() {
+      if($(window).scrollTop() > 50) {
+          $(".a-sticky-header").addClass("active");
+      } else {
+         $(".a-sticky-header").removeClass("active");
+      }
+  });
+});
