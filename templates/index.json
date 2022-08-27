@@ -10,13 +10,6 @@
             "heading_size": "h0"
           }
         },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "caption-with-letter-spacing"
-          }
-        },
         "button": {
           "type": "buttons",
           "disabled": true,
@@ -32,11 +25,10 @@
       },
       "block_order": [
         "heading",
-        "text",
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/saeed-anahid--GhLgB-oXNw-unsplash_1.jpg",
+        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-05-07_at_10.24.27_2.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "adapt_height_first_image": false,

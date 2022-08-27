@@ -16,6 +16,7 @@
 
 {%- style -%}
   .footer {
+    color: #fff;
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
   }
 
@@ -34,9 +35,95 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  .one-third-column {
+    width:22%;
+    margin-right:2%;
+    float:left;
+  }
+  .one-third-column-last {
+    width:25%;
+    margin-right:0;
+    float:right;
+  }
+  .footer h5 {
+    color: #fff;
+    font-size: 16px;
+  }
+  .footer ul {
+    padding-left: 0;
+  }
+  .footer ul li {
+    list-style: none;
+    padding: 3px 0;
+  }
+  .footer .site-details {
+    width: 100%;
+  }
+  .footer .site-details img {
+    float: right;
+    margin-top: -55px;
+  }
+  .footer .site-details p {
+    float: right;
+    font-size: 13px;
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .footer .one-half-column-left, .footer .one-half-column-right, 
+    .footer .one-third-column, .footer .one-third-column-last {
+      float:none;
+      width:100%;
+      margin-right:0;
+    }
+    .footer .site-details {
+      display: none;
+    }
+  }
 {%- endstyle -%}
 
 <footer class="footer section-{{ section.id }}-padding">
+  <div class="footer__content-bottom-wrapper page-width">
+    <div class="footer__column footer__localization isolate">
+      <div class="one-third-column">
+        <h5>Die Firma</h5>
+        <ul>
+          <li>Über avenida SANTIAGO</li>
+          <li>Nachhaltiger Schmuck</li>
+          <li>Unsere Werte</li>
+          <li>Karriere</li>
+          <li>Instagram</li>
+        </ul>
+      </div>
+      <div class="one-third-column">
+        <h5>Können wir helfen?</h5>
+        <ul>
+          <li>FAQs</li>
+          <li>Kontaktiere uns</li>
+          <li>Zahlungsoptionen</li>
+          <li>Versandinformationen</li>
+          <li>Retour & Umtausch</li>
+        </ul>
+      </div>
+      <div class="one-third-column-last">
+        <h5>Rechtliche Hinweise </h5>
+        <ul>
+          <li>Allgemeine Geschäftsbedingungen</li>
+          <li>Datenschutzerklärung</li>
+          <li>Widerrufsbedingungen</li>
+          <li>Impressum</li>
+          <li>&nbsp;</li>
+        </ul>
+      </div>
+      
+      <div class="site-details">
+        <a href="{{ routes.root_url }}">
+          <img class="logo_footer" width="210" height="44" loading="lazy" src="http://cdn.shopify.com/s/files/1/0643/9161/0595/files/avenida.png?v=1658124151&width=300">
+        </a>
+        <p>© 2022 avenida SANTIAGO GmbH - Alle Rechte vorbehalten - avenida SANTIAGO is powered by 4mission.</p>
+      </div>
+    </div>
+  </div>
   {% comment %} {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
       {%- if section.blocks.size > 0 -%}
@@ -224,7 +311,7 @@
     </div>
   {%- endif -%} {% endcomment %}
 
-  <div class="footer__content-bottom">
+  {% comment %} <div class="footer__content-bottom">
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization isolate">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
@@ -335,7 +422,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> {% endcomment %}
 </footer>
 
 {% javascript %}
