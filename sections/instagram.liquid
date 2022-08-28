@@ -25,12 +25,18 @@
     color: #fff;
     text-decoration: none;
   }
+  .instagram-section a svg {
+    width: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -2px;
+  }
 {%- endstyle -%}
 <section class="shopify-section section instagram-section">
   <div class="section-{{ section.id }}-padding page-width">
     <h3> {{ section.settings.custom_text_heading }} </h3>
     <p> {{ section.settings.custom_text_subheading }} </p>
-    <a href="#">Follow</a>
+    <a href="{{ section.settings.custom_text_cta_url }}">{% render 'icon-instagram' %}{{ section.settings.custom_text_cta }}</a>
   </div>
 </section>
 
@@ -55,6 +61,12 @@
       "type": "text",
       "label": "CTA Label",
       "default": "CTA Label"
+    },
+    {
+      "id": "custom_text_cta_url",
+      "type": "text",
+      "label": "Instagram URL",
+      "default": "https://www.instagram.com/avenida_santiago/"
     }
   ],
   "presets": [
