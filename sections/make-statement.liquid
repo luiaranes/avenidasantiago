@@ -1,6 +1,11 @@
-<div class="custom-text-section">
+
+{%- style -%}
+.text-center {
+  text-align: center;
+}
+{%- endstyle -%}
+<div class="make-statement-section section-{{ section.id }}-padding text-center">
   <h2> {{ section.settings.custom_text_title }} </h2>
-  <div>{{ section.settings.custom_text_body }}</div>
 </div>
 
 {% schema %}
