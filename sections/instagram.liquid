@@ -1,8 +1,33 @@
 {%- style -%}
+  .instagram-section {
+    background-color: #00000080;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+  }
+  
+  .instagram-section h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px;
+  }
 
+  .instagram-section p {
+    font-size: 18px;
+    margin: 0 0 20px;
+  }
+
+  .instagram-section a {
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 10px 80px;
+    color: #fff;
+    text-decoration: none;
+  }
 {%- endstyle -%}
-<section class="shopify-section section">
-  <div class="instagram-section section-{{ section.id }}-padding page-width">
+<section class="shopify-section section instagram-section">
+  <div class="section-{{ section.id }}-padding page-width">
     <h3> {{ section.settings.custom_text_heading }} </h3>
     <p> {{ section.settings.custom_text_subheading }} </p>
     <a href="#">Follow</a>
@@ -24,6 +49,12 @@
       "type": "text",
       "label": "Text box subheading",
       "default": "SubTitle"
+    },
+    {
+      "id": "custom_text_cta",
+      "type": "text",
+      "label": "CTA Label",
+      "default": "CTA Label"
     }
   ],
   "presets": [
