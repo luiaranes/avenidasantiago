@@ -63,13 +63,87 @@
       "settings": {
         "custom_text_heading": "WERDE TEIL DER FAM",
         "custom_text_subheading": "Folge uns auf Instagram und verpasse keine Releases und Stories",
-        "custom_text_cta": "Auf Instagram folgen"
+        "custom_text_cta": "Auf Instagram folgen",
+        "custom_text_cta_url": "https:\/\/www.instagram.com\/avenida_santiago\/"
+      }
+    },
+    "1661685109ca9d14d9": {
+      "type": "featured-product",
+      "blocks": {
+        "1661685109285a6eed-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "1661685109285a6eed-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "1661685109285a6eed-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "1661685109285a6eed-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "1661685109285a6eed-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "1661685109285a6eed-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "1661685109285a6eed-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "1661685109285a6eed-7": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "1661685109285a6eed-0",
+        "1661685109285a6eed-1",
+        "1661685109285a6eed-2",
+        "1661685109285a6eed-3",
+        "1661685109285a6eed-4",
+        "1661685109285a6eed-5",
+        "1661685109285a6eed-6",
+        "1661685109285a6eed-7"
+      ],
+      "settings": {
+        "product": "armband-1-a",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "image_banner",
     "16616686849f18e7b8",
-    "1661673219cf7b1d5d"
+    "1661673219cf7b1d5d",
+    "1661685109ca9d14d9"
   ]
 }
