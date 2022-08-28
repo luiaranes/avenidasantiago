@@ -57,10 +57,19 @@
         "ms_image_2": "shopify:\/\/shop_images\/Screen_Shot_2022-08-28_at_3.08.43_PM.png",
         "ms_text_2": "HALSKETTEN"
       }
+    },
+    "1661673219cf7b1d5d": {
+      "type": "instagram",
+      "settings": {
+        "custom_text_heading": "WERDE TEIL DER FAM",
+        "custom_text_subheading": "Folge uns auf Instagram und verpasse keine Releases und Stories",
+        "custom_text_cta": "Auf Instagram folgen"
+      }
     }
   },
   "order": [
     "image_banner",
-    "16616686849f18e7b8"
+    "16616686849f18e7b8",
+    "1661673219cf7b1d5d"
   ]
 }

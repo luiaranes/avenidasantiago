@@ -1,0 +1,79 @@
+{%- style -%}
+  .instagram-section {
+    background-color: #00000080;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+  }
+  
+  .instagram-section h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px;
+  }
+
+  .instagram-section p {
+    font-size: 18px;
+    margin: 0 0 20px;
+  }
+
+  .instagram-section a {
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 10px 80px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .instagram-section a svg {
+    width: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -2px;
+  }
+{%- endstyle -%}
+<section class="shopify-section section instagram-section">
+  <div class="section-{{ section.id }}-padding page-width">
+    <h3> {{ section.settings.custom_text_heading }} </h3>
+    <p> {{ section.settings.custom_text_subheading }} </p>
+    <a href="{{ section.settings.custom_text_cta_url }}">{% render 'icon-instagram' %}{{ section.settings.custom_text_cta }}</a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Instagram",
+  "settings": [
+    {
+      "id": "custom_text_heading",
+      "type": "text",
+      "label": "Text box heading",
+      "default": "Title"
+    },
+    {
+      "id": "custom_text_subheading",
+      "type": "text",
+      "label": "Text box subheading",
+      "default": "SubTitle"
+    },
+    {
+      "id": "custom_text_cta",
+      "type": "text",
+      "label": "CTA Label",
+      "default": "CTA Label"
+    },
+    {
+      "id": "custom_text_cta_url",
+      "type": "text",
+      "label": "Instagram URL",
+      "default": "https://www.instagram.com/avenida_santiago/"
+    }
+  ],
+  "presets": [
+    {
+      "name": "instagram-section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
