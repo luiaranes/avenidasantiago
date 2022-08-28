@@ -89,45 +89,12 @@
             "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
           }
-        },
-        "1661685109285a6eed-3": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "1661685109285a6eed-4": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "1661685109285a6eed-5": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "1661685109285a6eed-6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "1661685109285a6eed-7": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
         "1661685109285a6eed-0",
         "1661685109285a6eed-1",
-        "1661685109285a6eed-2",
-        "1661685109285a6eed-3",
-        "1661685109285a6eed-4",
-        "1661685109285a6eed-5",
-        "1661685109285a6eed-6",
-        "1661685109285a6eed-7"
+        "1661685109285a6eed-2"
       ],
       "settings": {
         "product": "armband-1-a",
@@ -138,12 +105,57 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16616872555210cb65": {
+      "type": "image-with-text",
+      "blocks": {
+        "166168725562a2b669-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "LASS DIR DEINEN STYLE NICHT VERBIETEN",
+            "heading_size": "h1"
+          }
+        },
+        "166168725562a2b669-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Curabitur est gravida et libero vitae dictum. Paullum deliquit, ponderibus modulisque suis ratio utitur. Nihil hic munitissimus habendi senatus locus, nihil horum? Prima luce, cum quibus mons aliud consensu ab eo.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "166168725562a2b669-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Lerne uns kennen",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166168725562a2b669-0",
+        "166168725562a2b669-1",
+        "166168725562a2b669-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-08-28_at_7.52.10_PM.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
     "16616686849f18e7b8",
     "1661673219cf7b1d5d",
-    "1661685109ca9d14d9"
+    "1661685109ca9d14d9",
+    "16616872555210cb65"
   ]
 }

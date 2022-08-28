@@ -12,6 +12,37 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  #shopify-section-template--16359765803235__16616872555210cb65 {
+    background-color: #7D998F;
+  }
+
+  .image-with-text .image-with-text__content {
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .image-with-text .image-with-text__media {
+    border: none;
+  }
+
+  .image-with-text .image-with-text__heading {
+    color: #fff;
+    font-size: 56px;
+  }
+
+  .image-with-text .button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    --border-offset: unset;
+    --border-opacity: unset;
+  }
+
+  .image-with-text .button:hover {
+    --border-offset: unset;
+    --border-opacity: unset;
+  }
 {%- endstyle -%}
 
 <div class="image-with-text image-with-text--{{ section.settings.content_layout }} page-width isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %} section-{{ section.id }}-padding">
