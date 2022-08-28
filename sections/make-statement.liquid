@@ -1,0 +1,107 @@
+
+{%- style -%}
+.make-statement-section {
+  padding: 20px 240px;
+  text-align: center;
+}
+
+.make-statement-section h1 {
+  color: #000000;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1041px) {
+  .make-statement-section {
+    padding: 20px 160px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .make-statement-section {
+    padding: 20px 100px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .grid__item.one-half {
+    width: 100%;
+    max-width: unset;
+  }
+  .make-statement-section {
+    padding: 20px 0;
+  }
+}
+{%- endstyle -%}
+<section class="shopify-section section">
+  <div class="make-statement-section section-{{ section.id }}-padding page-width">
+    <h1> {{ section.settings.custom_text_title }} </h1>
+    <div class="grid">
+      <div class="grid__item one-half">
+          <div>
+            {{ section.settings.ms_image_1 | image_url: width: 257 | image_tag:
+              loading: 'lazy',
+              width: 257,
+              height: 256,
+              widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+              alt: section.settings.ms_image_1.alt | escape
+            }}
+          </div>
+        <label>{{ section.settings.ms_text_1 }}</label>
+      </div>
+      <div class="grid__item one-half">
+        <div>
+          {{ section.settings.ms_image_2 | image_url: width: 257 | image_tag:
+            loading: 'lazy',
+            width: 257,
+            height: 256,
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            alt: section.settings.ms_image_2.alt | escape
+          }}
+        </div>
+        <label>{{ section.settings.ms_text_2 }}</label>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Make Statement",
+    "settings": [
+      {
+        "id": "custom_text_title",
+        "type": "text",
+        "label": "Text box heading",
+        "default": "Title"
+      },
+      {
+        "type": "image_picker",
+        "id": "ms_image_1",
+        "label": "Image"
+      },
+      {
+        "id": "ms_text_1",
+        "type": "text",
+        "label": "Add make statement 1 text below",
+        "default": "<p>Add your text here</p>"
+      },
+      {
+        "type": "image_picker",
+        "id": "ms_image_2",
+        "label": "Image"
+      },
+      {
+        "id": "ms_text_2",
+        "type": "text",
+        "label": "Add make statement 2 text below",
+        "default": "<p>Add your text here</p>"
+      }
+    ],
+    "presets": [
+      {
+        "name": "make-statement",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}
