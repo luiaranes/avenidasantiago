@@ -62,7 +62,8 @@
       "type": "instagram",
       "settings": {
         "custom_text_heading": "WERDE TEIL DER FAM",
-        "custom_text_subheading": "Folge uns auf Instagram und verpasse keine Releases und Stories"
+        "custom_text_subheading": "Folge uns auf Instagram und verpasse keine Releases und Stories",
+        "custom_text_cta": "Auf Instagram folgen"
       }
     }
   },
