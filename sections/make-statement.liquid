@@ -1,11 +1,24 @@
 
 {%- style -%}
-.text-center {
+.make-statement-section {
+  padding: 20px 0;
   text-align: center;
 }
+
+.make-statement-section h1 {
+  color: #000000;
+  margin-top: 0;
+}
 {%- endstyle -%}
-<div class="make-statement-section section-{{ section.id }}-padding text-center">
-  <h2> {{ section.settings.custom_text_title }} </h2>
+<div class="make-statement-section section-{{ section.id }}-padding">
+  <h1> {{ section.settings.custom_text_title }} </h1>
+  <div class="grid">
+    <div class="grid__item one-half">
+      <label>
+    </div>
+    <div class="grid__item one-half">
+    </div>
+  </div>
 </div>
 
 {% schema %}
@@ -19,9 +32,25 @@
         "default": "Title"
       },
       {
-        "id": "custom_text_body",
-        "type": "richtext",
-        "label": "Add custom text below",
+        "type": "image_picker",
+        "id": "ms_image_1",
+        "label": "Image"
+      },
+      {
+        "id": "ms_text_1",
+        "type": "text",
+        "label": "Add make statement 1 text below",
+        "default": "<p>Add your text here</p>"
+      },
+      {
+        "type": "image_picker",
+        "id": "ms_image_2",
+        "label": "Image"
+      },
+      {
+        "id": "ms_text_2",
+        "type": "text",
+        "label": "Add make statement 2 text below",
         "default": "<p>Add your text here</p>"
       }
     ],
