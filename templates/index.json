@@ -3,27 +3,34 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
+        "fe473546-575e-4f96-8ea2-a1c04ebddbc5": {
+          "type": "text",
+          "settings": {
+            "text": "NATURSTEIN NEU ERFUNDEN",
+            "text_style": "subtitle"
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Coming Soon",
+            "heading": "SCHWARZER TURMALIN",
             "heading_size": "h0"
           }
         },
         "button": {
           "type": "buttons",
-          "disabled": true,
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_label_1": "ARMBÄNDER",
+            "button_link_1": "shopify:\/\/collections\/armband",
             "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "HALSKETTEN",
+            "button_link_2": "shopify:\/\/collections\/armband",
             "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
+        "fe473546-575e-4f96-8ea2-a1c04ebddbc5",
         "heading",
         "button"
       ],
@@ -32,7 +39,7 @@
         "image_overlay_opacity": 40,
         "image_height": "large",
         "adapt_height_first_image": false,
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
