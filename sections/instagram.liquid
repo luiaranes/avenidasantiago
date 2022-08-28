@@ -1,0 +1,36 @@
+{%- style -%}
+
+{%- endstyle -%}
+<section class="shopify-section section">
+  <div class="instagram-section section-{{ section.id }}-padding page-width">
+    <h3> {{ section.settings.custom_text_heading }} </h3>
+    <p> {{ section.settings.custom_text_subheading }} </p>
+    <a href="#">Follow</a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Instagram",
+  "settings": [
+    {
+      "id": "custom_text_heading",
+      "type": "text",
+      "label": "Text box heading",
+      "default": "Title"
+    },
+    {
+      "id": "custom_text_subheading",
+      "type": "text",
+      "label": "Text box subheading",
+      "default": "SubTitle"
+    }
+  ],
+  "presets": [
+    {
+      "name": "instagram-section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
