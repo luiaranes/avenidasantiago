@@ -58,15 +58,6 @@
         "ms_text_2": "HALSKETTEN"
       }
     },
-    "1661673219cf7b1d5d": {
-      "type": "instagram",
-      "settings": {
-        "custom_text_heading": "WERDE TEIL DER FAM",
-        "custom_text_subheading": "Folge uns auf Instagram und verpasse keine Releases und Stories",
-        "custom_text_cta": "Auf Instagram folgen",
-        "custom_text_cta_url": "https:\/\/www.instagram.com\/avenida_santiago\/"
-      }
-    },
     "1661685109ca9d14d9": {
       "type": "featured-product",
       "blocks": {
@@ -171,7 +162,6 @@
   "order": [
     "image_banner",
     "16616686849f18e7b8",
-    "1661673219cf7b1d5d",
     "1661685109ca9d14d9",
     "16616872555210cb65",
     "16617496253db0dce2"
