@@ -6,14 +6,14 @@
         "fe473546-575e-4f96-8ea2-a1c04ebddbc5": {
           "type": "text",
           "settings": {
-            "text": "NATURSTEIN NEU ERFUNDEN",
+            "text": "STATEMENT SCHMUCK AUS RECYCLINGSILBER. 100% MADE IN GERMANY!",
             "text_style": "subtitle"
           }
         },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "SCHWARZER TURMALIN",
+            "heading": "JOIN THE PARTY",
             "heading_size": "h0"
           }
         },
@@ -35,7 +35,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2022-05-07_at_10.24.27_2.jpg",
+        "image": "shopify:\/\/shop_images\/avenida_SANTIAGO_Pool.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": true,
