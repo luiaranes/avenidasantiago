@@ -90,7 +90,7 @@
       "settings": {
         "product": "armband-1-a",
         "color_scheme": "background-1",
-        "secondary_background": false,
+        "secondary_background": true,
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 36,
