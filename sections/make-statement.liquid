@@ -36,7 +36,23 @@
   <div class="make-statement-section section-{{ section.id }}-padding page-width">
     <h1> {{ section.settings.custom_text_title }} </h1>
     <div class="grid">
-      <div class="grid__item one-half">
+      {%- for collection in collections -%}
+        <div class="grid__item one-half">
+            <div>
+              <a href="{{ collection.url }}" class="full-unstyled-link">
+                {{ collection.featured_image | image_url: width: 257 | image_tag:
+                  loading: 'lazy',
+                  width: 257,
+                  height: 256,
+                  widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                  alt: section.settings.ms_image_1.alt | escape
+                }}
+            </div>
+            <label>{{ collection.title }}</label>
+            </a>
+        </div>
+      {%- endfor -%}
+      {% comment %} <div class="grid__item one-half">
           <div>
             {{ section.settings.ms_image_1 | image_url: width: 257 | image_tag:
               loading: 'lazy',
@@ -59,7 +75,7 @@
           }}
         </div>
         <label>{{ section.settings.ms_text_2 }}</label>
-      </div>
+      </div> {% endcomment %}
     </div>
   </div>
 </section>
