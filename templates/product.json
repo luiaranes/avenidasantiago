@@ -49,11 +49,11 @@
           "settings": {
           }
         },
-        "collapsible-row-0": {
+        "collapsible-row-3": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Materials",
-            "icon": "leather",
+            "heading": "Pflegehinweise",
+            "icon": "heart",
             "content": "",
             "page": ""
           }
@@ -61,26 +61,28 @@
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Shipping & Returns",
+            "heading": "Lieferung",
             "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
             "content": "",
             "page": ""
           }
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Dimensions",
             "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
             "content": "",
             "page": ""
           }
@@ -89,6 +91,15 @@
           "type": "share",
           "settings": {
             "share_label": "Share"
+          }
+        },
+        "18b836cf-3ac7-451e-80b9-684cac555a09": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ein Geschenk machen",
+            "icon": "box",
+            "content": "",
+            "page": ""
           }
         }
       },
@@ -101,11 +112,12 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
         "collapsible-row-3",
-        "share"
+        "collapsible-row-1",
+        "collapsible-row-0",
+        "collapsible-row-2",
+        "share",
+        "18b836cf-3ac7-451e-80b9-684cac555a09"
       ],
       "settings": {
         "enable_sticky_info": true,
