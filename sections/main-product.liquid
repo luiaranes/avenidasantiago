@@ -79,7 +79,11 @@
       padding: 0;
     }
 
-    #prod-reco .product-recommendations .card-information {
+    #prod-reco .card-information {
+      display: none;
+    }
+
+    .shopify-section .product-recommendations {
       display: none;
     }
   {%- endstyle -%}
@@ -398,8 +402,8 @@
             {%- endfor -%}
             <div id="prod-reco">
               <div class="color-{{ section.settings.color_scheme }} gradient">
-                <h2>Der ideale Begleiter</h2>
-                <product-recommendations class="product-recommendations page-width section-{{ section.id }}-padding isolate" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4">
+                <product-recommendations class="page-width section-{{ section.id }}-padding isolate" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4">  
+                  <h2>Der ideale Begleiter</h2>
                   {% if recommendations.performed and recommendations.products_count > 0 %}
                     <h2 class="product-recommendations__heading {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
                     <ul class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down" role="list">
