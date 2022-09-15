@@ -97,6 +97,9 @@
     "predictive_search_show_price": false,
     "favicon": "shopify:\/\/shop_images\/Favicon.png",
     "currency_code_enabled": true,
+    "cart_type": "drawer",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Favicon.png",
+    "checkout_accent_color": "#2e79ac",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
