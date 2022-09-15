@@ -99,7 +99,9 @@
     "currency_code_enabled": true,
     "cart_type": "drawer",
     "checkout_logo_image": "shopify:\/\/shop_images\/Favicon.png",
-    "checkout_accent_color": "#2e79ac",
+    "checkout_accent_color": "#7d998f",
+    "checkout_button_color": "#7d998f",
+    "checkout_error_color": "#73070c",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
