@@ -48,14 +48,37 @@
         "show_text_below": false
       }
     },
-    "16616686849f18e7b8": {
-      "type": "make-statement",
+    "fc3c8e65-1b3b-45c7-97de-ed786b9d231a": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16134990168291__fc3c8e65-1b3b-45c7-97de-ed786b9d231a-16655018601a342716-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "armband"
+          }
+        },
+        "template--16134990168291__fc3c8e65-1b3b-45c7-97de-ed786b9d231a-16655018601a342716-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "halsketten"
+          }
+        }
+      },
+      "block_order": [
+        "template--16134990168291__fc3c8e65-1b3b-45c7-97de-ed786b9d231a-16655018601a342716-0",
+        "template--16134990168291__fc3c8e65-1b3b-45c7-97de-ed786b9d231a-16655018601a342716-1"
+      ],
       "settings": {
-        "custom_text_title": "Setze ein Statement",
-        "ms_image_1": "shopify:\/\/shop_images\/Screen_Shot_2022-08-28_at_3.05.59_PM.png",
-        "ms_text_1": "ARMBÄNDER",
-        "ms_image_2": "shopify:\/\/shop_images\/Screen_Shot_2022-08-28_at_3.08.43_PM.png",
-        "ms_text_2": "HALSKETTEN"
+        "title": "Setze ein Statement",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "color_scheme": "background-2",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "1661685109ca9d14d9": {
@@ -88,7 +111,7 @@
         "1661685109285a6eed-2"
       ],
       "settings": {
-        "product": "armband-1-a",
+        "product": "mailand-magic-moon",
         "color_scheme": "background-2",
         "secondary_background": true,
         "hide_variants": false,
@@ -161,7 +184,7 @@
   },
   "order": [
     "image_banner",
-    "16616686849f18e7b8",
+    "fc3c8e65-1b3b-45c7-97de-ed786b9d231a",
     "1661685109ca9d14d9",
     "16616872555210cb65",
     "16617496253db0dce2"
